@@ -1,20 +1,18 @@
-package com.thinhtran.bookservice.command.data;
+package com.thinhtran.bookservice.command.command;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import org.axonframework.modelling.command.TargetAggregateIdentifier;
 
-@Entity
-@Table(name = "books")
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class Book {
+@AllArgsConstructor
+public class UpdateBookCommand {
 
-    @Id
+    @TargetAggregateIdentifier
     private String id;
 
     private String name;
@@ -22,4 +20,6 @@ public class Book {
     private String author;
 
     private Boolean status;
+
 }
+

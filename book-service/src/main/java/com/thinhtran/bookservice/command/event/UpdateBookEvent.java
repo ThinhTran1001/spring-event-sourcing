@@ -1,20 +1,16 @@
-package com.thinhtran.bookservice.command.data;
+package com.thinhtran.bookservice.command.event;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@Entity
-@Table(name = "books")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Book {
+public class UpdateBookEvent {
 
-    @Id
     private String id;
 
     private String name;
@@ -22,4 +18,5 @@ public class Book {
     private String author;
 
     private Boolean status;
+
 }
