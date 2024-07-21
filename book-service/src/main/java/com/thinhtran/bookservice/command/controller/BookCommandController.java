@@ -24,7 +24,7 @@ public class BookCommandController {
                 UUID.randomUUID().toString(),
                 request.getName(),
                 request.getAuthor(),
-                request.getStatus());
+                true);
         return commandGateway.sendAndWait(command);
     }
 
