@@ -1,6 +1,6 @@
 package com.thinhtran.bookservice.query.projection;
 
-import com.thinhtran.bookservice.command.BookRepository;
+import com.thinhtran.bookservice.command.repository.BookRepository;
 import com.thinhtran.bookservice.command.data.Book;
 import com.thinhtran.bookservice.query.model.BookResponseModel;
 import com.thinhtran.bookservice.query.queries.GetAllBookQuery;

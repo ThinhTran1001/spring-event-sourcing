@@ -1,6 +1,6 @@
 package com.thinhtran.bookservice.command.event;
 
-import com.thinhtran.bookservice.command.BookRepository;
+import com.thinhtran.bookservice.command.repository.BookRepository;
 import com.thinhtran.bookservice.command.data.Book;
 import org.axonframework.eventhandling.EventHandler;
 import org.springframework.beans.BeanUtils;

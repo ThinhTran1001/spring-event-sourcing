@@ -1,7 +1,6 @@
 spring:
   application:
     name: book-service
-
   datasource:
     url: "jdbc:mysql://localhost:3306/bookdb"
     username: admin1
@@ -15,4 +14,5 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-
+server:
+  port: 8082
